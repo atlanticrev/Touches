@@ -1,0 +1,44 @@
+{
+  "name": "touches",
+  "version": "1.0.0",
+  "description": "",
+  "main": "backup/build/script.js",
+  "scripts": {
+    "start-http-server": "nodemon server/httpServer.js",
+    "start-ws-server": "nodemon server/websocketServer.js",
+    "sass": "backup/sass sass/style.scss backup/build/style.scss",
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "dev-server": "webpack-dev-server --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atlanticrev/Chat_client.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/atlanticrev/Chat_client/issues"
+  },
+  "homepage": "https://github.com/atlanticrev/Chat_client#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "lit-element": "^2.3.1",
+    "nodemon": "^2.0.2",
+    "websocket": "^1.0.31"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.6.0",
+    "file-loader": "^6.0.0",
+    "html-webpack-plugin": "^4.3.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.14.1",
+    "resolve-url-loader": "^3.1.1",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
